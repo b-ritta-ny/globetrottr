@@ -16,6 +16,8 @@ ActiveRecord::Schema.define(version: 2022_07_18_011355) do
   enable_extension "plpgsql"
 
   create_table "cities", force: :cascade do |t|
+    t.string "user_id"
+    t.string "country_id"
     t.string "name"
     t.date "date_traveled"
     t.datetime "created_at", precision: 6, null: false
@@ -23,6 +25,7 @@ ActiveRecord::Schema.define(version: 2022_07_18_011355) do
   end
 
   create_table "countries", force: :cascade do |t|
+    t.string "user_id"
     t.string "name"
     t.string "continent"
     t.string "language"
