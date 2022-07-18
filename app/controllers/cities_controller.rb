@@ -25,13 +25,13 @@ class CitiesController < ApplicationController
   end
 
   # PATCH/PUT /cities/1
-  def update
-    if @city.update(city_params)
-      render json: @city
-    else
-      render json: @city.errors, status: :unprocessable_entity
-    end
-  end
+  # def update
+  #   if @city.update(city_params)
+  #     render json: @city
+  #   else
+  #     render json: @city.errors, status: :unprocessable_entity
+  #   end
+  # end
 
   # DELETE /cities/1
   def destroy
